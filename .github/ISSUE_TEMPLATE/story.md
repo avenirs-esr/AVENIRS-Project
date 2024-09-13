@@ -1,6 +1,6 @@
 ---
 name: Story
-about: Issue for stories
+about: Issue for stories.
 title: ''
 labels: Story
 assignees: ''

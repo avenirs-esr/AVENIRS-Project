@@ -1,6 +1,6 @@
 ---
 name: Epic
-about: Issue for Epics
+about: Issue for epics.
 title: ''
 labels: Epic
 assignees: ''
