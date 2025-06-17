@@ -1,0 +1,37 @@
+---
+name: Technical Debt
+about: Issue for identifying and addressing technical debt.
+title: ''
+labels: Tech-Debt
+assignees: ''
+---
+
+## Epic lié
+
+[🔗 AVENIRS-Project #302](https://github.com/orgs/avenirs-esr/projects/18/views/1?pane=issue&itemId=115434471&issue=avenirs-esr%7CAVENIRS-Project%7C302)
+
+## Contexte
+
+### Origine ou cause :
+<!-- Pourquoi cette dette existe-t-elle ? (ex : dette intentionnelle, dette historique, contrainte projet) -->
+
+### Impact :
+<!-- Quel est l’impact sur le code, la performance, la maintenabilité, l’expérience développeur, etc. ? -->
+
+## Objectifs de résolution
+
+### Propositions de refactoring ou amélioration :
+<!-- Décrire brièvement les solutions ou pistes envisagées -->
+
+### Risques ou dépendances :
+<!-- Ce qui pourrait compliquer la résolution ou nécessiter des adaptations -->
+
+## Critères de complétion
+
+- [ ] Dettes identifiées traitées ou requalifiées
+- [ ] Tests ajustés ou ajoutés
+- [ ] Documentation mise à jour si nécessaire
+
+## Ressources associées
+
+- Issue liée : #302
