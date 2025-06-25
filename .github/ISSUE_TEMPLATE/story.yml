@@ -36,12 +36,12 @@ body:
         - [ ] Documentation mise à jour, si applicable.
         - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
     render: markdown
-- type: textarea
-  id: infos
-  attributes:
-    labels: Éléments UI de travail
-    description: Placer ici une image - sinon effacer cette ligne
-    value: |
-      [Lien Figma](URL_figma)
-    render: markdown
+  - type: textarea
+    id: infos
+    attributes:
+      labels: Éléments UI de travail
+      description: Placer ici une image - sinon effacer cette ligne
+      value: |
+        [Lien Figma](URL_figma)
+      render: markdown
 
