@@ -35,7 +35,7 @@ body:
         - [ ] Tests automatisés necessaires écrit et passés avec couverture suffisante
         - [ ] Documentation mise à jour, si applicable.
         - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
-    render: markdown
+      render: markdown
   - type: textarea
     id: infos
     attributes:
