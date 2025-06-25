@@ -17,7 +17,7 @@ body:
   - type: textarea
     id: desc
     attributes:
-      labels: Description
+      label: Description
       description: "Description of the User Story"
       value: |
         **En tant que [role],**
@@ -39,7 +39,7 @@ body:
   - type: textarea
     id: infos
     attributes:
-      labels: Éléments UI de travail
+      label: Éléments UI de travail
       description: Placer ici une image - sinon effacer cette ligne
       value: |
         [Lien Figma](URL_figma)
