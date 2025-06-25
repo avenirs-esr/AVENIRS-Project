@@ -1,6 +1,6 @@
 ---
 name: User Story
-description: Issue for describing a user stories.
+about: Issue for describing a user stories.
 title: "[US]: "
 labels: 
   - Story
