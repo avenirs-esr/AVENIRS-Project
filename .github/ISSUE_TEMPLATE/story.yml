@@ -17,7 +17,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Description de la User Story
+        ## Description de la User Story
+        
         **En tant que [role],**
         **Je veux [une action ou fonctionnalité],**
         **Afin de [plus-value/bénéfice ou résulat].**
