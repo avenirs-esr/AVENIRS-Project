@@ -29,6 +29,8 @@ body:
         **Je veux [une action ou fonctionnalité],**
         **Afin de [plus-value/bénéfice ou résulat].**
       render: markdown
+    validations:
+      required: true
 
   - type: textarea
     id: criteria
@@ -40,6 +42,8 @@ body:
         - [ ] Critère 2: Describe the second acceptance criterion here.
         - [ ] Critère 3: Describe additional criteria as needed.
       render: markdown
+    validations:
+      required: true
   - type: textarea
     id: dod
     attributes:
@@ -51,8 +55,9 @@ body:
         - [ ] Tests automatisés necessaires écrit et passés avec couverture suffisante
         - [ ] Documentation mise à jour, si applicable.
         - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
-
-      render: markdown        
+      render: markdown
+    validations:
+      required: true
   - type: textarea
     id: infos
     attributes:
@@ -61,4 +66,3 @@ body:
       value: |
         [Lien Figma](URL_figma)
       render: markdown
-
