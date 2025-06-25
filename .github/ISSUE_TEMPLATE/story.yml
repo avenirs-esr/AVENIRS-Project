@@ -62,7 +62,8 @@ body:
     id: infos
     attributes:
       label: Éléments UI de travail
-      description: Placer ici une image
+      description: Glisser/Placer une image en plus du lien figma
       value: |
         [Lien Figma](URL_figma)
+        
       render: markdown
