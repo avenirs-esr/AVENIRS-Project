@@ -1,0 +1,48 @@
+---
+name: User Story
+description: Issue for describing a user stories.
+title: '[US]: '
+labels: 
+  - Story
+type: "User Story"
+projects: ["Cofolio", "MC2I - kaban"]
+body:
+  - type: input
+    id: epic
+    attributes:
+      label: Epic
+      description: point to the epic issue by #
+      placeholder: "#"
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      labels: Description
+      description: "Description of the User Story"
+      value: |
+        **En tant que [role],**
+        **Je veux [une action ou fonctionnalité],**
+        **Afin de [plus-value/bénéfice ou résulat].**
+
+        **Critères d'acceptance**
+        - [ ] Critère 1: Describe the first acceptance criterion here.
+        - [ ] Critère 2: Describe the second acceptance criterion here.
+        - [ ] Critère 3: Describe additional criteria as needed.
+        
+        **Definition du fini (DoD):**
+        - [ ] Criètes d'acceptance tous remplis.
+        - [ ] Code revu et approuvé .
+        - [ ] Tests automatisés necessaires écrit et passés avec couverture suffisante
+        - [ ] Documentation mise à jour, si applicable.
+        - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
+    render: markdown
+- type: textarea
+  id: infos
+  attributes:
+    labels: Éléments UI de travail
+    description: Placer ici une image - sinon effacer cette ligne
+    value: |
+      [Lien Figma](URL_figma)
+    render: markdown
+
