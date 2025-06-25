@@ -7,4 +7,5 @@ projects: ["Cofolio", "MC2I - kaban"]
 body:
   - type: textarea
     attributes:
-      value: "### Description"
+      label: Description
+      value: A concise description of the epic 
