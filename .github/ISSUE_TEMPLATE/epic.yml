@@ -1,10 +1,10 @@
 name: Epic
-about: Issue for epics.
+description: Issue for epics.
 title: "[EPIC]: "
 labels: 
   - Epic
 projects: ["Cofolio", "MC2I - kaban"]
 body:
-  - type: markdown
+  - type: textarea
     attributes:
       value: "### Description"
