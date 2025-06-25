@@ -14,12 +14,10 @@ body:
       placeholder: "#"
     validations:
       required: true
-  - type: textarea
-    id: desc
+  - type: markdown
     attributes:
-      label: Description
-      description: "Description of the User Story"
       value: |
+        ### Description de la User Story
         **En tant que [role],**
         **Je veux [une action ou fonctionnalité],**
         **Afin de [plus-value/bénéfice ou résulat].**
@@ -35,12 +33,11 @@ body:
         - [ ] Tests automatisés necessaires écrit et passés avec couverture suffisante
         - [ ] Documentation mise à jour, si applicable.
         - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
-      render: markdown
   - type: textarea
     id: infos
     attributes:
       label: Éléments UI de travail
-      description: Placer ici une image - sinon effacer cette ligne
+      description: Placer ici une image
       value: |
         [Lien Figma](URL_figma)
       render: markdown
