@@ -5,9 +5,7 @@ title: "[US]: "
 labels: 
   - Story
 type: "User Story"
-projects: 
-  - AVENIRS-Project/16
-  - AVENIRS-Project/3
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 ---
 
 ### Epic *
