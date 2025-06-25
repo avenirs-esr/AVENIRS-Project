@@ -4,7 +4,9 @@ title: "[US]: "
 labels: 
   - Story
 type: "User Story"
-projects: ["Cofolio", "MC2I - kaban"]
+projects: 
+  - AVENIRS-Project/16
+  - AVENIRS-Project/3
 body:
   - type: input
     id: epic
