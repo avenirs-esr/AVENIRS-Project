@@ -1,11 +1,11 @@
 name: Epic
 about: Issue for epics.
-title: '[EPIC]: '
+title: "[EPIC]: "
 labels: 
   - Epic
-type: ''
+type: ""
 projects: ["Cofolio", "MC2I - kaban"]
-assignees: ''
+assignees:
 body:
   - type: markdown
     attributes:
