@@ -18,22 +18,41 @@ body:
     attributes:
       value: |
         ## Description de la User Story
-        
+
+  - type: textarea
+    id: role
+    attributes:
+      label: **Description**
+      description: Phrase d'introduction de la fonctionnalité
+      value: |      
         **En tant que [role],**
         **Je veux [une action ou fonctionnalité],**
         **Afin de [plus-value/bénéfice ou résulat].**
+      render: markdown
 
-        **Critères d'acceptance**
+  - type: textarea
+    id: criteria
+    attributes:
+      label: **Critères d'acceptance**
+      description: Lister les critères d'acceptance
+      value: |      
         - [ ] Critère 1: Describe the first acceptance criterion here.
         - [ ] Critère 2: Describe the second acceptance criterion here.
         - [ ] Critère 3: Describe additional criteria as needed.
-        
-        **Definition du fini (DoD):**
+      render: markdown
+  - type: textarea
+    id: dod
+    attributes:
+      label: **Definition du fini (DoD):**
+      description: Definition of the Done
+      value: |      
         - [ ] Criètes d'acceptance tous remplis.
         - [ ] Code revu et approuvé .
         - [ ] Tests automatisés necessaires écrit et passés avec couverture suffisante
         - [ ] Documentation mise à jour, si applicable.
         - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
+
+      render: markdown        
   - type: textarea
     id: infos
     attributes:
