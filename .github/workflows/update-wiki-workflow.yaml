@@ -1,0 +1,18 @@
+name: "Update US table in Wiki"
+
+on:
+  push:
+    branches:
+      - feat/522-wiki-automation
+
+
+jobs:
+  update:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@feat/522-wiki-automation
+    with:
+      org: avenirs-esr
+      project_number: "3"
+      wiki_page: "US‐522:-Test-update-wiki-from-project.md"
+      profil_label: "Profil: Apprenant"
+      epic_label: "Epics"
+    secrets: inherit
