@@ -13,6 +13,6 @@ jobs:
       org: avenirs-esr
       project_number: "3"
       wiki_page: "US‐522:-Test-update-wiki-from-project.md"
-      profil_label: "Profil: Apprenant"
-      epic_label: "Epics"
+      profil_label: "Profil : Apprenant"
+      epic_label: "Epic"
     secrets: inherit
