@@ -1,10 +1,8 @@
 name: "Update US table in Wiki"
 
 on:
-  push:
-    branches:
-      - feat/522-wiki-automation
-
+  schedule: [{ cron: "*/10 * * * *" }]
+  workflow_dispatch: {}
 
 jobs:
   update:
