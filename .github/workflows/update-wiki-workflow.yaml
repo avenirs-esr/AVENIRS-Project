@@ -10,7 +10,9 @@ jobs:
     with:
       org: avenirs-esr
       project_number: "3"
-      wiki_page: "US‐522:-Test-update-wiki-from-project.md"
+      wiki_page: "4-‐-2-‐-Spécifications-fonctionnelles-:-Apprenants.md"
+      start_marker: "<!--StartFragment-->"
+      end_marker: "<!--EndFragment-->"
       profil_label: "Profil : Apprenant"
       epic_label: "Epic"
     secrets: inherit
