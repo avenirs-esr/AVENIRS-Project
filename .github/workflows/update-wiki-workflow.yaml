@@ -1,9 +1,12 @@
 name: "Update US table in Wiki"
 
 on:
-  schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch: {}
+  push:
+    branches:
+      - feat/522-wiki-automation
+#  schedule:
+#    - cron: "0 * * * *"
+#  workflow_dispatch: {}
 
 jobs:
   execution-decision:
@@ -45,15 +48,15 @@ jobs:
           fi
 
   update:
-    needs: execution-decision
-    if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
-    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@main
+#    needs: execution-decision
+#    if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@feat/522-wiki-automation
     with:
       org: avenirs-esr
       project_number: "3"
-      wiki_page: "4-‐-2-‐-Spécifications-fonctionnelles-:-Apprenants.md"
-      start_marker: "<!--StartFragment-->"
-      end_marker: "<!--EndFragment-->"
+      wiki_page: "US‐522:-Test-update-wiki-from-project.md"
+#      start_marker: "<!--StartFragment-->"
+#      end_marker: "<!--EndFragment-->"
       profile_label: "Profil : Apprenant"
       epic_label: "Epic"
     secrets: inherit
