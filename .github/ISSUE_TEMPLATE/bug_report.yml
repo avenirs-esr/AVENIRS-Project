@@ -6,7 +6,7 @@ labels:
   - needs-triage
 type: "bug"
 projects: 
-  - AVENIRS-Project/18
+  - https://github.com/orgs/avenirs-esr/projects/18
 body:
   - type: markdown
     attributes:
