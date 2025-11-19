@@ -1,53 +1,13 @@
 name: "Update US table in Wiki"
 
 on:
-  schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch: {}
+  push:
+    branches:
+      - main
 
 jobs:
-  execution-decision:
-    runs-on: ubuntu-latest
-    outputs:
-      should_run: ${{ steps.decide.outputs.should_run }}
-    env:
-      TZ: Europe/Paris
-      RUN_HOURS: ${{ vars.WIKI_RUN_HOURS }}
-    steps:
-      - id: decide
-        name: ⏱️ Decide to run or skip
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          H_NOW=$(TZ="$TZ" date +%H)
-          M_NOW=$(TZ="$TZ" date +%M)
-
-          IFS=',' read -ra HOURS <<< "${RUN_HOURS// /}"
-          should=false
-          for hh in "${HOURS[@]}"; do
-            hh=$(printf "%02d" "$((10#$hh))")
-            if [[ "$H_NOW" == "$hh" ]]; then
-              should=true
-              break
-            fi
-          done
-
-          echo "Heure locale: ${H_NOW}:${M_NOW} ($TZ)"
-          echo "Heures ciblées: ${RUN_HOURS}"
-
-          if $should; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "Pass gate ✅"
-          else
-            echo "should_run=false" >> "$GITHUB_OUTPUT"
-            echo "Skip gate ⏭️"
-          fi
-
   update:
-    needs: execution-decision
-    if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
-    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@main
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@fix/wiki-automation
     with:
       org: avenirs-esr
       project_number: "3"
