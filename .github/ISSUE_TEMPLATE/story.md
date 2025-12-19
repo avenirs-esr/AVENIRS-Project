@@ -33,7 +33,7 @@ projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 - [ ] Performance : chargement raisonnable, fonctionnement sans lenteur.
 - [ ] Ergonomie/Mobile : rendu responsive, fonctionnel sur desktop, tablette et mobile.
 - [ ] Tests/Sécurité basique : pas de crash, pas d’erreur inattendue affichée (test d'insertion de valeurs non conformes).
-- [ ] Compatibilité navigateurs : tests sur les principaux navigateurs sur des versions qui ont moins de  (Chrome, Firefox, Edge, Safari) avec .
+- [ ] Compatibilité navigateurs : tests sur les principaux navigateurs (Chromium, Google Chrome, Firefox, Edge, Safari) sur des versions qui ont moins de 6 mois, spécifiques desktop et mobile.
 
      
 ### Definition du fini (DoD)
