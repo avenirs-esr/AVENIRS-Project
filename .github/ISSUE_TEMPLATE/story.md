@@ -29,6 +29,12 @@ projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 - [ ] Critère 1: Describe the first acceptance criterion here.
 - [ ] Critère 2: Describe the second acceptance criterion here.
 - [ ] Critère 3: Describe additional criteria as needed.
+- [ ] Accessibilité : Si applicable, vérification du respect des standards RGAA ou WCAG + test clavier et voix.
+- [ ] Performance : chargement raisonnable, fonctionnement sans lenteur.
+- [ ] Ergonomie/Mobile : rendu responsive, fonctionnel sur desktop, tablette et mobile.
+- [ ] Tests/Sécurité basique : pas de crash, pas d’erreur inattendue affichée (test d'insertion de valeurs non conformes).
+- [ ] Compatibilité navigateurs : tests sur les principaux navigateurs sur des versions qui ont moins de  (Chrome, Firefox, Edge, Safari) avec .
+
      
 ### Definition du fini (DoD)
 <!-- Definition of the Done -->     
