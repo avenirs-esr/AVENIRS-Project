@@ -10,7 +10,7 @@ projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 ### Epic *
 <!-- point l'épic par sa référence -->
-
+**Supprimer cette phrase et indiquer ici le hashtag et numéro de l'épic sans oublier de faire le lien dans les relationships**
 
 ## Description de la User Story
 
@@ -24,16 +24,19 @@ projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
      
 ### Critères d'acceptance
-<!-- Lister les critères d'acceptance-->
 
-- [ ] Critère 1: Describe the first acceptance criterion here.
-- [ ] Critère 2: Describe the second acceptance criterion here.
-- [ ] Critère 3: Describe additional criteria as needed.
+#### critères génériques
 - [ ] Accessibilité : Si applicable, vérification du respect des standards RGAA ou WCAG + test clavier et voix.
 - [ ] Performance : chargement raisonnable, fonctionnement sans lenteur.
 - [ ] Ergonomie/Mobile : rendu responsive, fonctionnel sur desktop, tablette et mobile.
 - [ ] Tests/Sécurité basique : pas de crash, pas d’erreur inattendue affichée (test d'insertion de valeurs non conformes).
 - [ ] Compatibilité navigateurs : tests sur les principaux navigateurs (Chromium, Google Chrome, Firefox, Edge, Safari) sur des versions qui ont moins de 6 mois, spécifiques desktop et mobile.
+
+#### critères spécifiques
+<!-- Lister les critères d'acceptance ci après -->
+- [ ] Critère 1: Describe the first acceptance criterion here.
+- [ ] Critère 2: Describe the second acceptance criterion here.
+- [ ] Critère 3: Describe additional criteria as needed.
 
      
 ### Definition du fini (DoD)
