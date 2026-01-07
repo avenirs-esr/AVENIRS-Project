@@ -54,18 +54,6 @@ body:
     attributes:
       label: Stacktrace
       description: If applicable, a stacktrace to help explain your problem.
-  - type: dropdown
-    id: severity
-    attributes:
-      label: Severity Level
-      description: How severe is this bug?
-      options:
-        - Critical
-        - High
-        - Medium
-        - Low
-    validations:
-      required: true
   - type: input
     id: related_issue
     attributes:
@@ -76,29 +64,12 @@ body:
         Epic : #issue_number
     validations:
       required: true
-  - type: dropdown
-    id: bugtype
-    attributes:
-      label: Bug Type
-      description: Select the type of bug.
-      options:
-        - Functional
-        - Performance
-        - Security
-        - UI/UX
-        - Other
   - type: input
     id: env
     attributes:
       label: Environment
       description: Details on browser, version, OS, etc.
       placeholder: "Chrome 118, Windows 10"
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs / Error Messages
-      description: Paste any error messages or logs here.
-      render: shell
   - type: textarea
     id: screenshots
     attributes:
