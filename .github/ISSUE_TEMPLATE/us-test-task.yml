@@ -18,21 +18,19 @@ body:
   - type: input
     id: story_number
     attributes:
-      label: Story Number
-      description: Reference the story this test is related to
-      placeholder: "123"
+      label: "Related User Story"
+      description: Reference the story number this test is related to
+      value: "## Story: #"
+      placeholder: "## Story: #"
     validations:
       required: true
   - type: textarea
-    id: test_items
+    id: description
     attributes:
-      label: Validation Items
+      label: Description
       description: List the validation items to be checked in dev environment
       value: |
-        - [ ] Item 1
-        - [ ] Item 2
-        - [ ] Item 3
-        - [ ] Item 4
+        - [ ] TODO
     validations:
       required: true
   - type: markdown
