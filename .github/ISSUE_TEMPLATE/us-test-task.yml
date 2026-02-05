@@ -1,6 +1,6 @@
 name: "🧪 TEST Task"
 description: Final task for testing a User Story in dev environment before deployment in qualif.
-title: "[TEST] <short description>"
+title: "[TEST] Vérifier que l'US #<numéro> est complètement fonctionnelle"
 labels:
   - Backend
   - Frontend
