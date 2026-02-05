@@ -18,7 +18,7 @@ body:
   - type: input
     id: story_number
     attributes:
-      label: ""
+      label: Story
       description: Reference the story number this test is related to
       value: "## Story: #"
       placeholder: "## Story: #"
