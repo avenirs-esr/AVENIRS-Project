@@ -1,13 +1,12 @@
 name: "🧪 TEST Task"
 description: Final task for testing a User Story in dev environment before deployment in qualif.
-title: "[TEST] Vérifier que l'US #<numéro> est complètement fonctionnelle"
+title: "[TEST] Vérifier que l'US #<number> est complètement fonctionnelle"
 labels:
   - Backend
   - Frontend
   - TEST
 type: "task"
-projects: 
-  - https://github.com/orgs/avenirs-esr/projects/16
+projects: ["AVENIRS-Project/16"]
 body:
   - type: markdown
     attributes:
