@@ -55,3 +55,15 @@ jobs:
       profile_label: "Profil : Apprenant"
       epic_label: "Epic"
     secrets: inherit
+
+  update-epic-us-rules:
+    needs: execution-decision
+    if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-epic-us-rules-workflow.yaml@main
+    with:
+      org: avenirs-esr
+      project_number: "3"
+      wiki_page: "4-‐-4-‐-Spécifications-fonctionnelles-:-Regles-de-gestion.md"
+      epic_label: "Epic"
+      us_label: "Story"
+    secrets: inherit
