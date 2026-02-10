@@ -56,41 +56,24 @@ jobs:
       epic_label: "Epic"
     secrets: inherit
 
-  update-epic-us-rules-full:
+  update-epic-us-rules:
     needs: execution-decision
     if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
+    strategy:
+      matrix:
+        include:
+          - mode: "full"
+            wiki_page: "4---4---1---Spécifications-fonctionnelles-:-Epics-US-RG-Completes.md"
+          - mode: "no-rules"
+            wiki_page: "4---4---2---Spécifications-fonctionnelles-:-Epics-US-Sans-RG.md"
+          - mode: "items-with-rules"
+            wiki_page: "4---4---3---Spécifications-fonctionnelles-:-Epics-US-Avec-RG-uniquement.md"
     uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-epic-us-rules-workflow.yaml@main
     with:
       org: avenirs-esr
       project_number: "3"
-      wiki_page: "4---4---1---Spécifications-fonctionnelles-:-Epics-US-RG-Completes.md"
+      wiki_page: ${{ matrix.wiki_page }}
       epic_label: "Epic"
       us_label: "Story"
-      mode: "full"
-    secrets: inherit
-
-  update-epic-us-rules-no-rules:
-    needs: execution-decision
-    if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
-    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-epic-us-rules-workflow.yaml@main
-    with:
-      org: avenirs-esr
-      project_number: "3"
-      wiki_page: "4---4---2---Spécifications-fonctionnelles-:-Epics-US-Sans-RG.md"
-      epic_label: "Epic"
-      us_label: "Story"
-      mode: "no-rules"
-    secrets: inherit
-
-  update-epic-us-rules-items-with-rules:
-    needs: execution-decision
-    if: needs.execution-decision.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
-    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-epic-us-rules-workflow.yaml@main
-    with:
-      org: avenirs-esr
-      project_number: "3"
-      wiki_page: "4---4---3---Spécifications-fonctionnelles-:-Epics-US-Avec-RG-uniquement.md"
-      epic_label: "Epic"
-      us_label: "Story"
-      mode: "items-with-rules"
+      mode: ${{ matrix.mode }}
     secrets: inherit
