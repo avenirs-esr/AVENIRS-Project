@@ -51,7 +51,7 @@ jobs:
     with:
       org: avenirs-esr
       project_number: "3"
-      wiki_page: "4---2---Spécifications-fonctionnelles-:-Apprenants.md"
+      wiki_page: "4-‐-2-‐-Spécifications-fonctionnelles-:-Apprenants.md"
       profile_label: "Profil : Apprenant"
       epic_label: "Epic"
     secrets: inherit
@@ -63,11 +63,11 @@ jobs:
       matrix:
         include:
           - mode: "full"
-            wiki_page: "4---4---1---Spécifications-fonctionnelles-:-Epics-US-RG-Completes.md"
+            wiki_page: "4-‐-4-‐-1---Spécifications-fonctionnelles-:-Epics-US-RG-Completes.md"
           - mode: "no-rules"
-            wiki_page: "4---4---2---Spécifications-fonctionnelles-:-Epics-US-Sans-RG.md"
+            wiki_page: "4-‐-4-‐-2---Spécifications-fonctionnelles-:-Epics-US-Sans-RG.md"
           - mode: "items-with-rules"
-            wiki_page: "4---4---3---Spécifications-fonctionnelles-:-Epics-US-Avec-RG-uniquement.md"
+            wiki_page: "4-‐-4-‐-3---Spécifications-fonctionnelles-:-Epics-US-Avec-RG-uniquement.md"
     uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-epic-us-rules-workflow.yaml@main
     with:
       org: avenirs-esr
