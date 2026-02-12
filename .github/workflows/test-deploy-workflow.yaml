@@ -1,0 +1,22 @@
+name: "Check US completion"
+
+on:
+  push:
+    branches: [ "feat/46-deployment-workflow" ]
+
+permissions:
+  contents: read
+  issues: write
+  repository-projects: write
+
+jobs:
+  call_remote:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/qualif-deployment-workflow.yaml@feat/46-deployment-workflow
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_APP_ID: ${{ secrets.GH_APP_ID }}
+      GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
+      SRV_BASE_PATH: ${{ secrets.SRV_BASE_PATH }}
+      SRV_DEPLOY_CMD: ${{ secrets.SRV_DEPLOY_CMD }}
+      SRV_UPDATE_DEPLOYMENT_CMD: ${{ secrets.SRV_UPDATE_DEPLOYMENT_CMD }}
+      JASYPT_ENCRYPTOR_PASSWORD: ${{ secrets.JASYPT_ENCRYPTOR_PASSWORD }}
