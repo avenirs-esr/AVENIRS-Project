@@ -1,0 +1,57 @@
+name: "Nightly Wiki + Deploy"
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: nightly
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  issues: write
+  repository-projects: write
+
+jobs:
+  update-wiki:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@main
+    with:
+      org: avenirs-esr
+      project_number: "3"
+      wiki_page: "4-‐-2-‐-Spécifications-fonctionnelles-:-Apprenants.md"
+      profile_label: "Profil : Apprenant"
+      epic_label: "Epic"
+    secrets: inherit
+
+  update-epic-us-rules:
+    strategy:
+      matrix:
+        include:
+          - mode: "full"
+            wiki_page: "4-‐-4-‐-1---Spécifications-fonctionnelles-:-Epics-US-RG-Completes.md"
+          - mode: "no-rules"
+            wiki_page: "4-‐-4-‐-2---Spécifications-fonctionnelles-:-Epics-US-Sans-RG.md"
+          - mode: "items-with-rules"
+            wiki_page: "4-‐-4-‐-3---Spécifications-fonctionnelles-:-Epics-US-Avec-RG-uniquement.md"
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-epic-us-rules-workflow.yaml@main
+    with:
+      org: avenirs-esr
+      project_number: "3"
+      wiki_page: ${{ matrix.wiki_page }}
+      epic_label: "Epic"
+      us_label: "Story"
+      mode: ${{ matrix.mode }}
+    secrets: inherit
+
+  deploy-on-qualif:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/qualif-deployment-workflow.yaml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_APP_ID: ${{ secrets.GH_APP_ID }}
+      GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
+      SRV_BASE_PATH: ${{ secrets.SRV_BASE_PATH }}
+      SRV_DEPLOY_CMD: ${{ secrets.SRV_DEPLOY_CMD }}
+      SRV_UPDATE_DEPLOYMENT_CMD: ${{ secrets.SRV_UPDATE_DEPLOYMENT_CMD }}
+      JASYPT_ENCRYPTOR_PASSWORD: ${{ secrets.JASYPT_ENCRYPTOR_PASSWORD }}
