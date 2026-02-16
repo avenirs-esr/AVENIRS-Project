@@ -3,7 +3,23 @@ name: "Nightly Wiki + Deploy"
 on:
   schedule:
     - cron: "0 1 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      update_wiki:
+        description: "Whether to update the wiki pages (true/false)"
+        required: true
+        default: false
+        type: boolean
+      update_epic_us_rules:
+        description: "Whether to update the epic and US rules wiki pages (true/false)"
+        required: true
+        default: false
+        type: boolean
+      deploy_on_qualif:
+          description: "Whether to deploy on qualif (true/false)"
+          required: true
+          default: false
+          type: boolean
 
 concurrency:
   group: nightly
@@ -16,6 +32,7 @@ permissions:
 
 jobs:
   update-wiki:
+    if: ${{ github.event.inputs.update_wiki || github.event_name == 'schedule' }}
     uses: avenirs-esr/avenirs-workflows/.github/workflows/update-wiki-from-project-workflow.yaml@main
     with:
       org: avenirs-esr
@@ -26,6 +43,7 @@ jobs:
     secrets: inherit
 
   update-epic-us-rules:
+    if: ${{ github.event.inputs.update_epic_us_rules || github.event_name == 'schedule' }}
     strategy:
       matrix:
         include:
@@ -46,6 +64,7 @@ jobs:
     secrets: inherit
 
   deploy-on-qualif:
+    if: ${{ github.event.inputs.deploy_on_qualif || github.event_name == 'schedule' }}
     uses: avenirs-esr/avenirs-workflows/.github/workflows/qualif-deployment-workflow.yaml@main
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
