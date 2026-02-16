@@ -45,6 +45,7 @@ jobs:
   update-epic-us-rules:
     if: ${{ github.event.inputs.update_epic_us_rules || github.event_name == 'schedule' }}
     strategy:
+      max-parallel: 1
       matrix:
         include:
           - mode: "full"
