@@ -1,0 +1,25 @@
+name: "Nightly Wiki + Deploy"
+
+on:
+  push:
+    branches: [ "fix/nightly-workflow" ]
+
+permissions:
+  contents: write
+  issues: write
+  repository-projects: write
+
+jobs:
+  deploy-on-qualif:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/qualif-deployment-test-workflow.yaml@fix/reset-and-seeding
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_APP_ID: ${{ secrets.GH_APP_ID }}
+      GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
+      SRV_BASE_PATH: ${{ secrets.SRV_BASE_PATH }}
+      SRV_DEPLOY_CMD: ${{ secrets.SRV_DEPLOY_CMD }}
+      SRV_UPDATE_DEPLOYMENT_CMD: ${{ secrets.SRV_UPDATE_DEPLOYMENT_CMD }}
+      JASYPT_ENCRYPTOR_PASSWORD: ${{ secrets.JASYPT_ENCRYPTOR_PASSWORD }}
+      EMPTY_DATASET_ACCESS_TOKEN: ${{ secrets.EMPTY_DATASET_ACCESS_TOKEN }}
+      ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+      BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
