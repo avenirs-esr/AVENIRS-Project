@@ -1,0 +1,31 @@
+name: "E2e tests on environment"
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Target environment for E2E tests"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - qualif
+          - recette
+
+permissions:
+  contents: write
+  issues: write
+  repository-projects: write
+
+jobs:
+  e2e-tests:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/e2e-tests-workflow.yaml@main
+    with:
+      host_url: ${{ inputs.environment == 'recette' && vars.RECETTE_COFOLIO_URL || inputs.environment == 'qualif' && vars.QUALIF_COFOLIO_URL || vars.DEV_COFOLIO_URL }}
+    secrets:
+      GH_APP_ID: ${{ secrets.GH_APP_ID }}
+      GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
+      EMPTY_DATASET_ACCESS_TOKEN: ${{ secrets.EMPTY_DATASET_ACCESS_TOKEN }}
+      ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+      BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
