@@ -1,0 +1,20 @@
+name: "Reopen parent US when sub-issue is opened or reopened"
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: read
+  issues: write
+  repository-projects: write
+
+jobs:
+  call_remote:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/reopen-us-workflow.yaml@main
+    with:
+      issue_node_id: ${{ github.event.issue.node_id }}
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_APP_ID: ${{ secrets.GH_APP_ID }}
+      GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
