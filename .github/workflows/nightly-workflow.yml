@@ -16,10 +16,10 @@ on:
         default: false
         type: boolean
       deploy_on_qualif:
-          description: "Whether to deploy on qualif (true/false)"
-          required: true
-          default: false
-          type: boolean
+        description: "Whether to deploy on qualif (true/false)"
+        required: true
+        default: false
+        type: boolean
 
 concurrency:
   group: nightly
@@ -43,6 +43,7 @@ jobs:
     secrets: inherit
 
   update-epic-us-rules:
+    needs: update-wiki
     if: ${{ github.event.inputs.update_epic_us_rules || github.event_name == 'schedule' }}
     strategy:
       max-parallel: 1
