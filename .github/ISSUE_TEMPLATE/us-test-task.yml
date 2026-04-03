@@ -1,6 +1,6 @@
 name: "🧪 TEST Task"
 description: Final task for testing a User Story in dev environment before deployment in qualif.
-title: "[TEST] Implémenter les tests E2E et vérifier que l'US #<number> est complètement fonctionnelle sur dev"
+title: "[TEST] Vérifier que l'US #<number> est complètement fonctionnelle sur dev"
 labels:
   - Backend
   - Frontend
@@ -29,8 +29,8 @@ body:
       label: Description
       description: List the validation items to be checked in dev environment
       value: |
-        - [ ] ⚠️ Implémenter les tests E2E
-        - [ ] TODO vérifications sur environnement dev
+        - TODO: Répertorier toutes les RG de l'US
+        - TODO: Pour chaque RG, ajouter une preuve (capture d'écran, capture vidéo) de la bonne validation
     validations:
       required: true
   - type: markdown
