@@ -79,3 +79,6 @@ jobs:
       EMPTY_DATASET_ACCESS_TOKEN: ${{ secrets.EMPTY_DATASET_ACCESS_TOKEN }}
       ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
       BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+      ROCKETCHAT_API_URL: ${{ secrets.ROCKETCHAT_API_URL }}
+      ROCKETCHAT_TOKEN: ${{ secrets.ROCKETCHAT_TOKEN }}
+      ROCKETCHAT_USER_ID: ${{ secrets.ROCKETCHAT_USER_ID }}
