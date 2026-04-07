@@ -1,6 +1,6 @@
 name: "🧪 TEST Task"
 description: Final task for E2E testing a User Story in dev environment before deployment in qualif.
-title: "[TEST] Implémenter les tests E2E et vérifier que l'US #<number> est complètement fonctionnelle sur dev"
+title: "[TEST] Implémenter les tests E2E de l'US #<number>"
 labels:
   - Backend
   - Frontend
