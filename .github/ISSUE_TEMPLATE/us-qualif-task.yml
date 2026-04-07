@@ -29,8 +29,11 @@ body:
       label: Description
       description: List the validation items to be checked in dev environment
       value: |
-        - TODO: Répertorier toutes les RG de l'US
-        - TODO: Pour chaque RG, ajouter une preuve (capture d'écran, capture vidéo) de la bonne validation sur l'environnement dev
+        Règles de gestion :
+          - TODO: Répertorier toutes les RG de l'US
+
+        Validation :
+        Pour chaque RG, ajouter une preuve (capture d'écran, capture vidéo) de la bonne validation sur l'environnement dev
     validations:
       required: true
   - type: markdown
