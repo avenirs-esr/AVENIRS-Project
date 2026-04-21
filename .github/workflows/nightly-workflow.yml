@@ -69,7 +69,6 @@ jobs:
     if: ${{ github.event.inputs.deploy_on_qualif || github.event_name == 'schedule' }}
     uses: avenirs-esr/avenirs-workflows/.github/workflows/qualif-deployment-workflow.yaml@main
     secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GH_APP_ID: ${{ secrets.GH_APP_ID }}
       GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
       SRV_BASE_PATH: ${{ secrets.SRV_BASE_PATH }}
@@ -82,3 +81,5 @@ jobs:
       ROCKETCHAT_API_URL: ${{ secrets.ROCKETCHAT_API_URL }}
       ROCKETCHAT_TOKEN: ${{ secrets.ROCKETCHAT_TOKEN }}
       ROCKETCHAT_USER_ID: ${{ secrets.ROCKETCHAT_USER_ID }}
+      WIKI_APP_ID: ${{ secrets.WIKI_APP_ID }}
+      WIKI_APP_TOKEN: ${{ secrets.WIKI_APP_TOKEN }}
