@@ -1,0 +1,72 @@
+name: "🔄 Refactoring"
+description: Plan refactoring work to improve code quality and maintainability.
+title: "[Refactor]: <component or module>"
+labels:
+  - refactoring
+  - code-improvement
+type: "task"
+projects: 
+  - https://github.com/orgs/avenirs-esr/projects/18
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔄 Refactoring – Cofolio
+
+        Use this template for planned refactoring work to improve code quality, readability, or maintainability.
+        **Note:** For existing technical debt, use the "Technical Debt" template instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Refactoring Summary
+      description: What code needs to be refactored and why?
+      placeholder: "Refactor authentication module to improve readability..., Consolidate duplicate code in..."
+    validations:
+      required: true
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State
+      description: Describe the current implementation and its limitations.
+      placeholder: |
+        - Current structure
+        - Pain points
+        - Maintenance challenges
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_changes
+    attributes:
+      label: Proposed Changes
+      description: What improvements will be made?
+      placeholder: |
+        - New architecture
+        - Benefits (readability, performance, maintainability)
+        - Scope of changes
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact & Dependencies
+      description: What could be affected by these changes?
+      placeholder: |
+        - Affected modules
+        - Breaking changes (if any)
+        - Testing requirements
+        - Other issues that depend on this
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Definition of Done
+      description: What criteria must be met for this refactoring to be complete?
+      placeholder: |
+        - [ ] Code refactored according to plan
+        - [ ] Tests updated/passing
+        - [ ] No regression issues
+        - [ ] Code reviewed and approved
+        - [ ] Documentation updated (if applicable)
+  - type: markdown
+    attributes:
+      value: |
+        Refactoring improves code quality without changing external behavior.

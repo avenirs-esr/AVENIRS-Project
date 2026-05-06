@@ -1,0 +1,66 @@
+name: "📚 Documentation"
+description: Improve or add documentation without code changes.
+title: "[Doc]: <documentation topic>"
+labels:
+  - documentation
+type: "task"
+projects: 
+  - https://github.com/orgs/avenirs-esr/projects/18
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Documentation – Cofolio
+
+        Use this template to create, improve, or update project documentation.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Documentation Summary
+      description: What documentation needs to be created or improved?
+      placeholder: "Add API documentation for..., Update setup guide for..., Create troubleshooting guide for..."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & Content
+      description: What should be covered in this documentation?
+      placeholder: |
+        - Overview/context
+        - Step-by-step instructions
+        - Examples
+        - Common issues
+        - Links to related docs
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Target Audience
+      description: Who is this documentation for?
+      placeholder: "Developers, Product Owners, End Users, DevOps Engineers, etc."
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where should this documentation be added/updated?
+      placeholder: "docs/, README.md, wiki, etc."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Definition of Done
+      description: What criteria must be met for this documentation to be complete?
+      placeholder: |
+        - [ ] Content written and reviewed
+        - [ ] Links validated
+        - [ ] Examples tested
+        - [ ] PR merged
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve Cofolio documentation!

@@ -1,0 +1,63 @@
+name: "🔬 Spike/Research"
+description: Conduct technical research or investigation with no direct deliverable.
+title: "[Spike]: <research topic>"
+labels:
+  - spike
+  - research
+type: "task"
+projects: 
+  - https://github.com/orgs/avenirs-esr/projects/18
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔬 Spike/Research – Cofolio
+
+        Use this template for technical research, investigations, or proof-of-concepts that help inform decisions but don't produce a direct code deliverable.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Research Objective
+      description: What do we need to learn or investigate?
+      placeholder: "Evaluate performance impact of migrating to..., Investigate best practices for..., Assess feasibility of..."
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: Background & Motivation
+      description: Why is this research important?
+      placeholder: "Current situation..., Decision needed..., Impact on..."
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed Approach
+      description: How do you plan to conduct the research?
+      placeholder: |
+        - Review existing documentation/articles
+        - Create a proof-of-concept
+        - Conduct performance tests
+        - Benchmark alternatives
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Definition of Done
+      description: What criteria must be met for this research to be complete?
+      placeholder: |
+        - [ ] Research findings documented
+        - [ ] Recommendations provided
+        - [ ] Decision made on next steps
+  - type: input
+    id: related_epic
+    attributes:
+      label: Related Epic (optional)
+      description: Reference the epic number if applicable
+      placeholder: "Epic : #issue_number"
+  - type: markdown
+    attributes:
+      value: |
+        Outcome: This spike will inform decisions for future Enhancement or User Story issues.

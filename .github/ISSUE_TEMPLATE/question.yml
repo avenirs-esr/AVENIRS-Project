@@ -1,0 +1,45 @@
+name: "❔ Question/Support"
+description: Ask questions or get help from the community.
+title: "[Question]: <your question>"
+labels:
+  - question
+type: "other"
+projects: 
+  - https://github.com/orgs/avenirs-esr/projects/18
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❔ Question/Support – Cofolio
+
+        Use this template to ask questions about the project, contribution process, or get support.
+        **Note:** If you're reporting a bug, use the "Bug Report" template instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What is your question?
+      placeholder: "How do I..., Can I..., Is it possible to..., How does..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context or background information.
+      placeholder: "What are you trying to do? What have you already tried?"
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if applicable)
+      description: Provide details about your environment.
+      placeholder: "OS, Node version, Browser, etc."
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any screenshots, error messages, or links that might help?
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your question! Our team will get back to you as soon as possible.

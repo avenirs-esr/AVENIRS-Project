@@ -1,0 +1,90 @@
+name: "✨ Enhancement/Évolution"
+description: Help us improve by suggesting enhancements, feature improvements, or identifying inconsistencies.
+title: "[Enhancement]: <short description>"
+labels:
+  - enhancement
+  - needs-triage
+type: "enhancement"
+projects: 
+  - https://github.com/orgs/avenirs-esr/projects/18
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Enhancement – Cofolio
+
+        Please fill out the following fields as thoroughly as possible to describe the improvement, inconsistency, or feature enhancement you'd like to suggest.
+  - type: input
+    id: summary
+    attributes:
+      label: Enhancement Summary
+      description: Brief description of the enhancement or inconsistency identified.
+      placeholder: "Improve the portfolio save confirmation flow..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Motivation
+      description: Why is this enhancement needed? What problem or inconsistency does it address?
+      placeholder: |
+        Users are confused by the current flow because...
+        There's an inconsistency between... and...
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behavior
+      description: How does the feature currently work?
+      placeholder: "Currently, when users save a portfolio, they..."
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired Behavior
+      description: How should the feature work after this enhancement?
+      placeholder: "After this enhancement, users should be able to..."
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: What benefits does this enhancement provide? (UX improvement, consistency, performance, etc.)
+      placeholder: |
+        - Better user experience
+        - Improved consistency across the application
+        - Reduced cognitive load
+  - type: input
+    id: related_issue
+    attributes:
+      label: Related Epic
+      description: Reference the epic number this enhancement is related to
+      value: "Epic : #"
+      placeholder: | 
+        Epic : #issue_number
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Mockups
+      description: Add screenshots, mockups, or diagrams to help explain the enhancement.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the priority level for this enhancement?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve Cofolio! This issue will be automatically added to the 'Cofolio inter-sprint' project.
