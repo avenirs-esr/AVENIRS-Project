@@ -5,8 +5,7 @@ labels:
   - enhancement
   - needs-triage
 type: "enhancement"
-projects: 
-  - https://github.com/orgs/avenirs-esr/projects/18
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown
     attributes:

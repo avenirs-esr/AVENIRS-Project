@@ -4,8 +4,7 @@ title: "[Question]: <your question>"
 labels:
   - question
 type: "other"
-projects: 
-  - https://github.com/orgs/avenirs-esr/projects/18
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown
     attributes:

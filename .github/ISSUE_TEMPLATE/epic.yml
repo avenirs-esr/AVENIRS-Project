@@ -3,7 +3,7 @@ description: Issue for epics.
 title: "[EPIC]: "
 labels: 
   - Epic
-projects: ["Cofolio", "MC2I - kaban"]
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: textarea
     attributes:

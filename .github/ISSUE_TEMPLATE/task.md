@@ -5,6 +5,7 @@ title: ''
 labels: ['task']
 type: 'task'
 assignees: ''
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 ---
 
