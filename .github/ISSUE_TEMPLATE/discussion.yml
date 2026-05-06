@@ -1,0 +1,53 @@
+name: "❓ Discussion/Investigation"
+description: Ask questions or discuss topics that need investigation before becoming an issue.
+title: "[Discussion]: <topic>"
+labels:
+  - discussion
+  - needs-triage
+type: "discussion"
+projects: 
+  - https://github.com/orgs/avenirs-esr/projects/18
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❓ Discussion/Investigation – Cofolio
+
+        Use this template to ask questions, discuss ideas, or identify topics that need investigation before being formalized as an Enhancement or User Story.
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic
+      description: What would you like to discuss or investigate?
+      placeholder: "Should we refactor the authentication flow? Is there a better way to handle..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Background
+      description: Provide context about why this discussion is important.
+      placeholder: "Current situation..., Concerns..., Relevant information..."
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions or Points to Consider
+      description: List specific questions or points that need to be addressed.
+      placeholder: |
+        - What are the implications of...?
+        - How does this impact...?
+        - Are there alternatives to...?
+    validations:
+      required: true
+  - type: input
+    id: related_epic
+    attributes:
+      label: Related Epic (optional)
+      description: Reference the epic number if applicable
+      placeholder: "Epic : #issue_number"
+  - type: markdown
+    attributes:
+      value: |
+        Once discussion is complete, this may be converted to an Enhancement or User Story.
