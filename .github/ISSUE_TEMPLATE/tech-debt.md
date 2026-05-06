@@ -2,9 +2,10 @@
 name: Technical Debt
 about: Issue for identifying and addressing technical debt.
 title: ''
-labels: Tech-Debt
+labels: tech-debt
 assignees: ''
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
+type: "Enabler Story"
 
 ---
 

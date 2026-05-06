@@ -4,7 +4,7 @@ title: "[Enhancement]: <short description>"
 labels:
   - enhancement
   - needs-triage
-type: "enhancement"
+type: "Feature"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown

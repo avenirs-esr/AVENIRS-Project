@@ -2,7 +2,7 @@ name: Epic
 description: Issue for epics.
 title: "[EPIC]: "
 labels: 
-  - Epic
+  - epic
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: textarea

@@ -3,7 +3,7 @@ name: User Story
 about: Issue for describing a user stories.
 title: "[US]: "
 labels: 
-  - Story
+  - story
 type: "User Story"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 ---
