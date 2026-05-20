@@ -83,3 +83,7 @@ jobs:
       ROCKETCHAT_USER_ID: ${{ secrets.ROCKETCHAT_USER_ID }}
       WIKI_APP_ID: ${{ secrets.WIKI_APP_ID }}
       WIKI_APP_TOKEN: ${{ secrets.WIKI_APP_TOKEN }}
+      COFOLIO_CLIENT_PATH: ${{ secrets.COFOLIO_CLIENT_PATH }}
+      COFOLIO_VITE_API_URL: ${{ secrets.COFOLIO_VITE_API_URL }}
+      SRV_DEV_PATH: ${{ secrets.SRV_DEV_PATH }}
+      COFOLIO_CLIENT_SERVICE_NAME: ${{ secrets.COFOLIO_CLIENT_SERVICE_NAME }}
