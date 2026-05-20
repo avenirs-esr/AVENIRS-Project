@@ -1,6 +1,6 @@
 name: "🐞 Bug Report"
 description: Help us identify and fix bugs by filling out the details below.
-title: "[Bug]: <short description>"
+title: "[Bug]: <short title>"
 labels:
   - bug
   - needs-triage
@@ -25,7 +25,7 @@ body:
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: How can we reproduce the bug? List each step.
+      description: How can we reproduce the bug? List each step only (no screenshot here). 
       placeholder: |
         1. Go to...
         2. Click on...
@@ -44,36 +44,27 @@ body:
     id: actual
     attributes:
       label: Actual Behavior
-      description: What actually happens?
-      placeholder: "The dashboard remains empty after saving."
+      description: What actually happens? Provide also screenshot
+      placeholder: |
+        A description: The dashboard remains empty after saving.
+        A Screenshot: Paste de screenshot here
+        A stacktrace: Paste the error/console stacktrace
     validations:
       required: true
-  - type: textarea
-    id: stacktrace
-    attributes:
-      label: Stacktrace
-      description: If applicable, a stacktrace to help explain your problem.
   - type: input
     id: related_issue
     attributes:
-      label: Related Epic
-      description: Reference the epic number this story is related to
-      value: "Epic : #"
+      label: Related Issue
+      description: If not createed from a US, reference the issue this BUG is related to
+      value: "US #"
       placeholder: | 
-        Epic : #issue_number
-    validations:
-      required: true
+        US : #issue_number
   - type: input
     id: env
     attributes:
       label: Environment
       description: Details on browser, version, OS, etc.
       placeholder: "Chrome 118, Windows 10"
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots
-      description: Add screenshots to help explain the problem.
   - type: markdown
     attributes:
       value: |
