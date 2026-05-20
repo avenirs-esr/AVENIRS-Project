@@ -46,9 +46,10 @@ body:
       label: Actual Behavior
       description: What actually happens? Provide also screenshot
       placeholder: |
-        A description: The dashboard remains empty after saving.
-        A Screenshot: Paste de screenshot here
-        A stacktrace: Paste the error/console stacktrace
+        Describe at least one of these items
+        a description: The dashboard remains empty after saving.
+        a screenshot: Paste de screenshot here
+        a stacktrace: Paste the error/console stacktrace
     validations:
       required: true
   - type: input
