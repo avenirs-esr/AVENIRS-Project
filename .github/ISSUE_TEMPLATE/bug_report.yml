@@ -5,7 +5,7 @@ labels:
   - bug
   - needs-triage
 type: "bug"
-projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
+projects: ["AVENIRS-Project/16"]
 body:
   - type: markdown
     attributes:
@@ -22,14 +22,20 @@ body:
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: description
     attributes:
-      label: Steps to Reproduce
-      description: How can we reproduce the bug? List each step only (no screenshot here). 
+      label: Description du Bug
+      description: Steps to reproduce and actual behavior observed
       placeholder: |
+        Steps to reproduce:
         1. Go to...
         2. Click on...
         3. See error...
+        
+        Actual Behavior:
+        - Description of the problem
+        - Screenshot (if applicable)
+        - Stacktrace (if applicable)
     validations:
       required: true
   - type: textarea
@@ -40,26 +46,6 @@ body:
       placeholder: "The portfolio should be saved and visible in the dashboard."
     validations:
       required: true
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Behavior
-      description: What actually happens? Provide also screenshot
-      placeholder: |
-        Describe at least one of these items
-        a description: The dashboard remains empty after saving.
-        a screenshot: Paste de screenshot here
-        a stacktrace: Paste the error/console stacktrace
-    validations:
-      required: true
-  - type: input
-    id: related_issue
-    attributes:
-      label: Related Issue
-      description: If not createed from a US, reference the issue this BUG is related to
-      value: "US #"
-      placeholder: | 
-        US : #issue_number
   - type: input
     id: env
     attributes:
