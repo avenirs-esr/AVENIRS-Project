@@ -1,6 +1,6 @@
 name: "🎯 Epic"
 description: A PI Planning initiative that groups User Stories to deliver a major feature or featured goal.
-title: "[EPIC]: "
+title: "[EPIC][MVP] "
 labels:
   - epic
 type: "Epic"
@@ -12,9 +12,15 @@ body:
       label: Target Milestone (Major Version)
       description: Which major version milestone is this epic targeting? (Can span multiple versions)
       options:
-        - v1.0
-        - v2.0
-        - v3.0
+        - MVP
+        - V1
+        - V2
+        - V3
+        - V4
+        - V5
+        - V6
+        - V7
+        - V8
     validations:
       required: false
   - type: textarea
@@ -22,3 +28,5 @@ body:
       label: Description
       description: A concise description of the epic objectives and goals
       placeholder: Describe the major feature or featured goal...
+    validations:
+      required: true
