@@ -1,11 +1,24 @@
 name: Epic
-description: Issue for epics.
+description: A PI Planning initiative that groups User Stories to deliver a major feature or featured goal.
 title: "[EPIC]: "
 labels: 
   - epic
+type: "Epic"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: Target Milestone (Major Version)
+      description: Which major version milestone is this epic targeting? (Can span multiple versions)
+      options:
+        - v1.0
+        - v2.0
+        - v3.0
+    validations:
+      required: false
   - type: textarea
     attributes:
       label: Description
-      value: A concise description of the epic 
+      description: A concise description of the epic objectives and goals
+      placeholder: Describe the major feature or featured goal...
