@@ -1,7 +1,7 @@
-name: Epic
+name: "🎯 Epic"
 description: A PI Planning initiative that groups User Stories to deliver a major feature or featured goal.
 title: "[EPIC]: "
-labels: 
+labels:
   - epic
 type: "Epic"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]

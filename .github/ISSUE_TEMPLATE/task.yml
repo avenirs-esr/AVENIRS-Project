@@ -1,0 +1,26 @@
+name: "📋 Task"
+about: Issue for tasks.
+title: ''
+labels:
+  - task
+type: 'task'
+assignees: ''
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Story:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    id: ui_elements
+    attributes:
+      label: Éléments UI de travail
+      description: Ajouter lien Figma et/ou images
+      placeholder: "[lien Figma](URL_figma)"

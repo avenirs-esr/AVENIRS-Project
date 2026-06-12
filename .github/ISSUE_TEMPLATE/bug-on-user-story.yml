@@ -1,0 +1,60 @@
+name: "🐞 Bug on User Story"
+description: Report a Bug depending on an User Story
+title: "[Bug]: <short title>"
+labels:
+  - bug
+type: "task"
+projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐞 Bug on User Story – Cofolio
+
+        Bug report for a User Story developped during sprint
+  - type: input
+    id: story_number
+    attributes:
+      label: Related User Story
+      description: Reference the User Story number this Bug is related to
+      value: "## Story: #"
+      placeholder: "## Story: #"
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: Brief description of the problem.
+      placeholder: "Cofolio does not save trace correctly"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du Bug
+      description: Steps to reproduce and actual behavior observed
+      placeholder: |
+        Steps to reproduce:
+        1. Go to...
+        2. Click on...
+        3. See error...
+        
+        Actual Behavior:
+        - Description of the problem
+        - Screenshot (if applicable)
+        - Stacktrace (if applicable)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "The portfolio should be saved and visible in the dashboard."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! This bug task will be automatically added to the 'Cofolio' project.
