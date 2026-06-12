@@ -1,10 +1,10 @@
 name: "🔬 Spike/Research"
-description: Conduct technical research or investigation with no direct deliverable.
+description: Conduct technical research or feasibility study to explore potential solutions before implementing a User Story.
 title: "[Spike]: <research topic>"
 labels:
   - spike
   - research
-type: "task"
+type: "Spike"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown
