@@ -1,6 +1,6 @@
 name: "📖 User Story"
 about: Issue for describing a user stories.
-title: "[US]: "
+title: "[US] "
 labels:
   - story
 type: "User Story"

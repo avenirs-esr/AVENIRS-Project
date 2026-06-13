@@ -1,6 +1,6 @@
 name: "❔ Question/Support"
 description: Ask questions or get help from the community.
-title: "[Question]: <your question>"
+title: "[Question] <your question>"
 labels:
   - question
 type: "discussion"

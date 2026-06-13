@@ -1,6 +1,6 @@
 name: "✨ Enhancement/Évolution"
 description: Help us improve by suggesting enhancements, feature improvements, or identifying inconsistencies.
-title: "[Enhancement]: <short description>"
+title: "[Enhancement] <short description>"
 labels:
   - enhancement
   - needs-triage

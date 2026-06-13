@@ -1,6 +1,6 @@
 name: "💳 Technical Debt"
 description: Issue for identifying and addressing technical debt.
-title: ''
+title: '[TECH-DEBT] '
 labels:
   - tech-debt
 type: "Enabler Story"

@@ -1,6 +1,6 @@
 name: "🔄 Refactoring"
 description: Plan refactoring work to improve code quality and maintainability.
-title: "[Refactor]: <component or module>"
+title: "[Refactor] <component or module>"
 labels:
   - refactoring
   - code-improvement

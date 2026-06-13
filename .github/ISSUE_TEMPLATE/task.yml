@@ -1,6 +1,6 @@
 name: "📋 Task"
 about: Issue for tasks.
-title: ''
+title: '[TASK] '
 labels:
   - task
 type: 'task'

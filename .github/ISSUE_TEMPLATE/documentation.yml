@@ -1,6 +1,6 @@
 name: "📚 Documentation"
 description: Improve or add documentation without code changes.
-title: "[Doc]: <documentation topic>"
+title: "[Doc] <documentation topic>"
 labels:
   - documentation
 type: "task"

@@ -1,6 +1,6 @@
 name: "❓ Discussion/Investigation"
 description: Ask questions or discuss topics that need investigation before becoming an issue.
-title: "[Discussion]: <topic>"
+title: "[Discussion] <topic>"
 labels:
   - discussion
   - needs-triage

@@ -1,6 +1,6 @@
 name: "🐞 Bug on User Story"
 description: Report a Bug depending on an User Story
-title: "[Bug]: <short title>"
+title: "[Bug] <short title>"
 labels:
   - bug
 type: "task"

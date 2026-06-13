@@ -1,6 +1,6 @@
 name: "🔬 Spike/Research"
 description: Conduct technical research or feasibility study to explore potential solutions before implementing a User Story.
-title: "[Spike]: <research topic>"
+title: "[Spike] <research topic>"
 labels:
   - spike
   - research
