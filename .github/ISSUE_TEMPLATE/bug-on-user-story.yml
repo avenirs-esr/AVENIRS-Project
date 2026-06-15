@@ -32,7 +32,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: BUG Description
+      label: Bug Description
       description: Steps to reproduce and actual behavior observed
       placeholder: |
         Steps to reproduce:
