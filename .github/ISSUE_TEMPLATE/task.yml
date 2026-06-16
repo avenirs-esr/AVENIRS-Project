@@ -1,5 +1,5 @@
 name: "📋 Task"
-about: Issue for tasks.
+description: Issue for tasks.
 title: '[TASK] '
 labels:
   - task
