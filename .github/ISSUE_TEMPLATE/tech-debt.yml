@@ -7,12 +7,42 @@ type: "Enabler Story"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 body:
-  - type: markdown
+  - type: input
+    id: epic
     attributes:
-      value: |
-        ## Epic lié
+      label: "Epic lié"
+      description: "Indiquer l'ID ou le lien vers l'epic"
+      placeholder: "#302"
+    validations:
+      required: true
 
-        [🔗 AVENIRS-Project #302](https://github.com/orgs/avenirs-esr/projects/18/views/1?pane=issue&itemId=115434471&issue=avenirs-esr%7CAVENIRS-Project%7C302)
+  - type: dropdown
+    id: debt_type
+    attributes:
+      label: "Type de dette"
+      description: "Catégoriser la dette technique"
+      options:
+        - Code
+        - Architecture
+        - Tests
+        - Documentation
+        - DevOps
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact_level
+    attributes:
+      label: "Niveau d'impact technique"
+      description: "Impact réel sur le système ou l'équipe"
+      options:
+        - 🔴 Bloquant
+        - 🟠 Dégradant
+        - 🟡 Gênant
+        - 🟢 Mineur
+    validations:
+      required: true
+
   - type: textarea
     id: origine
     attributes:
@@ -25,9 +55,9 @@ body:
   - type: textarea
     id: impact
     attributes:
-      label: "Impact"
+      label: "Impact détaillé"
       description: "Impact sur code, performance, maintenabilité, DX..."
-      placeholder: "Ex : ralentissement build, complexité, bugs..."
+      placeholder: "Ex : complexité accrue, ralentissement, dette de test..."
     validations:
       required: true
 
@@ -48,15 +78,16 @@ body:
       placeholder: "Migration DB, dépendance externe..."
     validations:
       required: false
-  - type: markdown
+
+  - type: checkboxes
+    id: done
     attributes:
-      value: |     
+      label: "Critères de complétion"
+      options:
+        - label: "Dettes identifiées traitées ou requalifiées"
+        - label: "Tests ajustés ou ajoutés"
+        - label: "Documentation mise à jour"
 
-        ## Critères de complétion
-
-        - [ ] Dettes identifiées traitées ou requalifiées
-        - [ ] Tests ajustés ou ajoutés
-        - [ ] Documentation mise à jour si nécessaire
   - type: textarea
     id: ressources
     attributes:
