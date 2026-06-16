@@ -4,7 +4,6 @@ title: '[TASK] '
 labels:
   - task
 type: 'task'
-assignees: ''
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 body:
