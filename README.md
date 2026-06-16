@@ -15,3 +15,11 @@ It's for duplicating epics depending on version: `./duplicate-issue.sh 6 V2` wil
 * Check project ids associated on issues:
 Check on type: US, Epic and Bug and apply it if missing: `APPLY=true ./sync-issues-projects.sh`
 You can set other state of issues by editing the script
+
+* Check version/milestone epics et US
+```shell
+STATE=ALL ./check-epics-milestones.sh
+EXCLUDE_TECH=false ./check-epics-milestones.sh
+CHECK_US=false ./check-epics-milestones.sh
+```
+
