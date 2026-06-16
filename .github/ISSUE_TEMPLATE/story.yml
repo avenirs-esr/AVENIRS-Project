@@ -1,5 +1,5 @@
 name: "📖 User Story"
-description: Issue for describing a user stories.
+description: Issue for describing a user story.
 title: "[US] "
 labels:
   - story
@@ -7,64 +7,88 @@ type: "User Story"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 body:
-  - type: markdown
+  - type: input
+    id: epic
     attributes:
-      value: |
-        ### Epic *
-        **Supprimer cette phrase et indiquer ici le hashtag et numéro de l'épic sans oublier de faire le lien dans les relationships**
-  - type: markdown
-    attributes:
-      value: |
-        ## Description de la User Story
-  - type: textarea
-    id: description
-    attributes:
-      label: Énoncé
-      description: Phrase d'introduction de la fonctionnalité
-      placeholder: |
-        **En tant que [role],**
-        
-        **Je veux [une action ou fonctionnalité],**
-        
-        **Afin de [plus-value/bénéfice ou résulat].**
+      label: "Epic lié"
+      description: "ID ou lien vers l'epic (ex: #123)"
+      placeholder: "#123"
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
-        ### Critères d'acceptance
-        
-        #### critères génériques
-        - [ ] Accessibilité : Si applicable, vérification du respect des standards RGAA ou WCAG + test clavier et voix.
-        - [ ] Performance : chargement raisonnable, fonctionnement sans lenteur.
-        - [ ] Ergonomie/Mobile : rendu responsive, fonctionnel sur desktop, tablette et mobile.
-        - [ ] Tests/Sécurité basique : pas de crash, pas d'erreur inattendue affichée (test d'insertion de valeurs non conformes).
-        - [ ] Compatibilité navigateurs : tests sur les principaux navigateurs (Chromium, Google Chrome, Firefox, Edge, Safari) sur des versions qui ont moins de 6 mois, spécifiques desktop et mobile.
-        
-        #### critères spécifiques
+      ⚠️ Cette User Story doit être prête (Definition of Ready) avant développement.
+      
+      ## Description de la User Story
+
   - type: textarea
-    id: specific_criteria
+    id: user_story
     attributes:
-      label: Critères spécifiques
+      label: "User Story"
+      description: "Formalisme standard"
       placeholder: |
-        - [ ] Critère 1: Describe the first acceptance criterion here.
-        - [ ] Critère 2: Describe the second acceptance criterion here.
-        - [ ] Critère 3: Describe additional criteria as needed.
-  - type: markdown
+        En tant que ...
+        Je souhaite ...
+        Afin de ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
     attributes:
-      value: |
-        ### Definition du fini (DoD)
-        - [ ] Critères d'acceptance tous remplis.
-        - [ ] Code revu et approuvé.
-        - [ ] Tests automatisés necessaires écrit et passés avec couverture suffisante.
-        - [ ] Documentation mise à jour, si applicable.
-        - [ ] Fonctionnalité déployée dans l'environnement de [environment name].
-  - type: markdown
+      label: "Description détaillée"
+      description: "Contexte fonctionnel et règles métier"
+      placeholder: "Décrire précisément le comportement attendu"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
     attributes:
-      value: |
-        ### Éléments UI de travail
+      label: "Critères d'acceptation"
+      description: "Critères spécifiques (Given / When / Then recommandé)"
+      placeholder: |
+        Given ...
+        When ...
+        Then ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: business_value
+    attributes:
+      label: "Valeur métier"
+      options:
+        - 🔴 Critique
+        - 🟠 Importante
+        - 🟡 Utile
+        - 🟢 Confort
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: "Notes techniques"
+      description: "Contraintes ou indications pour l'équipe technique"
+      placeholder: "Optionnel"
+    validations:
+      required: false
+
   - type: textarea
     id: ui_elements
     attributes:
       label: UI Elements
       placeholder: "[Lien Figma](URL_figma)"
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Référentiels projet
+
+        - Definition of Ready (DoR) :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-ready-fr/
+
+        - Definition of Done (DoD) :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-done-fr/
