@@ -18,9 +18,9 @@ body:
   - type: markdown
     attributes:
       value: |
-      ⚠️ Cette User Story doit être prête (Definition of Ready) avant développement.
-      
-      ## Description de la User Story
+        ⚠️ Cette User Story doit être prête (Definition of Ready) avant développement.
+
+        ## Description de la User Story
 
   - type: textarea
     id: user_story
