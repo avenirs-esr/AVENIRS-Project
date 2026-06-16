@@ -13,31 +13,53 @@ body:
         ## Epic lié
 
         [🔗 AVENIRS-Project #302](https://github.com/orgs/avenirs-esr/projects/18/views/1?pane=issue&itemId=115434471&issue=avenirs-esr%7CAVENIRS-Project%7C302)
+  - type: textarea
+    id: origine
+    attributes:
+      label: "Origine ou cause"
+      description: "Pourquoi cette dette existe-t-elle ?"
+      placeholder: "Dette historique, contrainte projet, dette intentionnelle..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Impact"
+      description: "Impact sur code, performance, maintenabilité, DX..."
+      placeholder: "Ex : ralentissement build, complexité, bugs..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Propositions de refactoring ou amélioration"
+      description: "Solutions envisagées"
+      placeholder: "Refactoring module X, suppression dépendance Y..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: risques
+    attributes:
+      label: "Risques ou dépendances"
+      description: "Points de vigilance"
+      placeholder: "Migration DB, dépendance externe..."
+    validations:
+      required: false
   - type: markdown
     attributes:
-      value: |
-        ## Contexte
-
-        ### Origine ou cause :
-        <!-- Pourquoi cette dette existe-t-elle ? (ex : dette intentionnelle, dette historique, contrainte projet) -->
-
-        ### Impact :
-        <!-- Quel est l'impact sur le code, la performance, la maintenabilité, l'expérience développeur, etc. ? -->
-
-        ## Objectifs de résolution
-
-        ### Propositions de refactoring ou amélioration :
-        <!-- Décrire brièvement les solutions ou pistes envisagées -->
-
-        ### Risques ou dépendances :
-        <!-- Ce qui pourrait compliquer la résolution ou nécessiter des adaptations -->
+      value: |     
 
         ## Critères de complétion
 
         - [ ] Dettes identifiées traitées ou requalifiées
         - [ ] Tests ajustés ou ajoutés
         - [ ] Documentation mise à jour si nécessaire
-
-        ## Ressources associées
-
-        - Issue liée : #302
+  - type: textarea
+    id: ressources
+    attributes:
+      label: "Ressources associées"
+      description: "Issues, PR, documentation..."
+      placeholder: "#302, lien doc..."
