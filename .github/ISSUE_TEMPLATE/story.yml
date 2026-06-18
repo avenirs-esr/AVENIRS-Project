@@ -26,29 +26,18 @@ body:
     id: user_story
     attributes:
       label: "User Story"
-      description: "Formalisme standard"
+      description: "Formalisme standard, description et critères d'acceptation"
       placeholder: |
+        **Formalisation: **
         En tant que ...
         Je souhaite ...
         Afin de ...
-    validations:
-      required: true
 
-  - type: textarea
-    id: description
-    attributes:
-      label: "Description détaillée"
-      description: "Contexte fonctionnel et règles métier"
-      placeholder: "Décrire précisément le comportement attendu"
-    validations:
-      required: true
+        **Description**
+        Décrire précisément le comportement attendu
 
-  - type: textarea
-    id: acceptance_criteria
-    attributes:
-      label: "Critères d'acceptation"
-      description: "Critères spécifiques (Given / When / Then recommandé)"
-      placeholder: |
+
+        **Critères d'acceptaiton**
         Given ...
         When ...
         Then ...
