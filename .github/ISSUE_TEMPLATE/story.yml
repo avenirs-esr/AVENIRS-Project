@@ -7,14 +7,6 @@ type: "User Story"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 body:
-  - type: input
-    id: epic
-    attributes:
-      label: "Epic lié"
-      description: "ID ou lien vers l'epic (ex: #123)"
-      placeholder: "#123"
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
@@ -41,18 +33,6 @@ body:
         Given ...
         When ...
         Then ...
-    validations:
-      required: true
-
-  - type: dropdown
-    id: business_value
-    attributes:
-      label: "Valeur métier"
-      options:
-        - 🔴 Critique
-        - 🟠 Importante
-        - 🟡 Utile
-        - 🟢 Confort
     validations:
       required: true
 
