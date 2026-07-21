@@ -68,6 +68,8 @@ jobs:
   deploy-on-qualif:
     if: ${{ github.event.inputs.deploy_on_qualif || github.event_name == 'schedule' }}
     uses: avenirs-esr/avenirs-workflows/.github/workflows/qualif-deployment-workflow.yaml@main
+    with:
+      run_e2e_tests: ${{ vars.RUN_E2E_ON_QUALIF_DEPLOYMENT }}
     secrets:
       GH_APP_ID: ${{ secrets.GH_APP_ID }}
       GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
