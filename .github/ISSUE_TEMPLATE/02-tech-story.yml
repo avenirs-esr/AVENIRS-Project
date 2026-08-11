@@ -1,0 +1,59 @@
+name: "💳 Technical Story"
+description: Issue for describing a Technical Story
+title: "[ENABLER] "
+labels:
+  - enabler
+type: "Enabler Story"
+projects:
+  - "AVENIRS-Project/16"
+  - "AVENIRS-Project/3"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description de la Technical Story
+
+        Une Technical Story décrit un travail technique nécessaire pour permettre,
+        sécuriser ou faciliter l'évolution du produit.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Décrire le besoin technique, la capacité à mettre en place et les éléments à réaliser."
+      placeholder: |
+        Exemple :
+        Mettre en place le mécanisme permettant de ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: "Notes techniques"
+      description: "Contraintes, choix techniques, impacts ou indications pour l'équipe technique."
+      placeholder: |
+        Contraintes ou indications techniques...
+    validations:
+      required: false
+
+  - type: textarea
+    id: ui_elements
+    attributes:
+      label: "UI Elements"
+      description: "À renseigner uniquement si la Technical Story implique des éléments d'interface."
+      placeholder: "[Lien Figma](URL_figma)"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Référentiels projet
+
+        - Definition of Ready (DoR) :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-ready-fr/
+
+        - Definition of Done (DoD) :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-done-fr/
