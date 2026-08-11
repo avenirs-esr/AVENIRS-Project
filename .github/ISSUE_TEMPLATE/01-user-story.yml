@@ -19,7 +19,7 @@ body:
     attributes:
       label: "User Story"
       description: "Formalisme standard, description et critères d'acceptation"
-      placeholder: |
+      value: |
         **Formalisation: **
         En tant que ...
         Je souhaite ...
@@ -33,6 +33,7 @@ body:
         Given ...
         When ...
         Then ...
+      render: markdown
     validations:
       required: true
 

@@ -4,7 +4,7 @@ title: "[Refactor] <component or module>"
 labels:
   - refactoring
   - code-improvement
-type: "task"
+type: "Enabler Story"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown
