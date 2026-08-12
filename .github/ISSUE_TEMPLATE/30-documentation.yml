@@ -3,7 +3,7 @@ description: Improve or add documentation without code changes.
 title: "[Doc] <documentation topic>"
 labels:
   - documentation
-type: "task"
+type: "Task"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown

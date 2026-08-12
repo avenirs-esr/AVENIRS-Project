@@ -3,7 +3,7 @@ description: Report a Bug depending on an User Story
 title: "[Bug] <short title>"
 labels:
   - bug
-type: "task"
+type: "Task"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown

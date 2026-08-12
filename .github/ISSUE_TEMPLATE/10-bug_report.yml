@@ -4,7 +4,7 @@ title: "[Bug] <short title>"
 labels:
   - bug
   - needs-triage
-type: "bug"
+type: "Bug"
 projects: ["AVENIRS-Project/16"]
 body:
   - type: markdown

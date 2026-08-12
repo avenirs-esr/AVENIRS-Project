@@ -4,7 +4,7 @@ title: "[Discussion] <topic>"
 labels:
   - discussion
   - needs-triage
-type: "discussion"
+type: "Discussion"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown

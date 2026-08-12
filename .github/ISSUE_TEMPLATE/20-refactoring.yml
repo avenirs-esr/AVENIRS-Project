@@ -54,18 +54,18 @@ body:
         - Breaking changes (if any)
         - Testing requirements
         - Other issues that depend on this
-  - type: textarea
-    id: acceptance
-    attributes:
-      label: Definition of Done
-      description: What criteria must be met for this refactoring to be complete?
-      placeholder: |
-        - [ ] Code refactored according to plan
-        - [ ] Tests updated/passing
-        - [ ] No regression issues
-        - [ ] Code reviewed and approved
-        - [ ] Documentation updated (if applicable)
   - type: markdown
     attributes:
       value: |
         Refactoring improves code quality without changing external behavior.
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Référentiels projet
+
+        - Definition of Ready (DoR) :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-ready-fr/
+
+        - Definition of Done (DoD) :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-done-fr/

@@ -3,7 +3,7 @@ description: Ask questions or get help from the community.
 title: "[Question] <your question>"
 labels:
   - question
-type: "discussion"
+type: "Discussion"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 body:
   - type: markdown

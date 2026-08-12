@@ -7,14 +7,6 @@ type: "Enabler Story"
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 body:
-  - type: input
-    id: epic
-    attributes:
-      label: "Epic lié"
-      description: "Indiquer l'ID ou le lien vers l'epic"
-      placeholder: "#302"
-    validations:
-      required: true
 
   - type: dropdown
     id: debt_type

@@ -14,8 +14,7 @@ body:
       value: |
         ## Description de la Technical Story
 
-        Une Technical Story décrit un travail technique nécessaire pour permettre,
-        sécuriser ou faciliter l'évolution du produit.
+        Une Technical Story décrit un travail technique nécessaire pour permettre, sécuriser ou faciliter l'évolution du produit.
 
   - type: textarea
     id: description

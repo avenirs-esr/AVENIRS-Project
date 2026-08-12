@@ -3,7 +3,7 @@ description: Issue for tasks.
 title: '[TASK] '
 labels:
   - task
-type: 'task'
+type: 'Task'
 projects: ["AVENIRS-Project/16", "AVENIRS-Project/3"]
 
 body:

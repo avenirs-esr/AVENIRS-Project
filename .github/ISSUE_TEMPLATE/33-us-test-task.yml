@@ -5,7 +5,7 @@ labels:
   - Backend
   - Frontend
   - TEST
-type: "task"
+type: "Task"
 projects: ["AVENIRS-Project/16"]
 body:
   - type: markdown
