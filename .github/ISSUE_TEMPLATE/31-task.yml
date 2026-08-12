@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Story:
+        ## Task:
 
         ⚠️ Attachez cette tâche comme sous-issue de la User Story (une fois créée, à droite dans l'issue, bouton "Relationships" puis "Add parent"), sinon elle ne sera jamais prise en compte par l'automatisation.
   - type: textarea
