@@ -12,7 +12,7 @@ body:
       value: |
         ## Technical Debt
 
-        ⚠️ Attachez cette Technical Debt comme sous-issue d'une EPIC (une fois crée à droite dans l'issue, bouton "Relationships" puis "Add parent"), sinon elle ne sera jamais prise en compte par l'automatisation.
+        ⚠️ Attachez cette Technical Debt comme sous-issue d'une EPIC (une fois créée, à droite dans l'issue, bouton "Relationships" puis "Add parent"), sinon elle ne sera jamais prise en compte par l'automatisation.
   - type: dropdown
     id: debt_type
     attributes:
@@ -82,8 +82,8 @@ body:
       label: "Critères de complétion"
       options:
         - label: "Dettes identifiées traitées ou requalifiées"
-        - label: "Tests ajustés ou ajoutés"
-        - label: "Documentation mise à jour"
+        - label: "Tests ajustés ou ajoutés lorsque nécessaire"
+        - label: "Documentation mise à jour lorsque nécessaire"
 
   - type: textarea
     id: ressources
@@ -96,6 +96,8 @@ body:
     attributes:
       value: |
         ### Référentiels projet
+
+        Les critères de Definition of Ready (DoR) et Definition of Done (DoD) s'appliquent à cette Technical Debt selon sa nature
 
         - Definition of Ready (DoR) :
           https://avenirs-esr.github.io/dev-doc/quality/definition-of-ready-fr/

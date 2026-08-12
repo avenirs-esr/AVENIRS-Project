@@ -14,8 +14,8 @@ body:
         ## 🧪 QUALIF Task – Cofolio
 
         Validation MANUELLE finale d'une User Story en environnement de développement avant le déploiement en qualification.
-        
-        ⚠️ Attachez cette tâche comme sous-issue de la User Story (bouton "Add sub-issue" en bas à droite de l'issue), sinon elle ne sera jamais prise en compte par l'automatisation.
+
+        ⚠️ Attachez cette tâche comme sous-issue de la User Story (une fois créée, à droite dans l'issue, bouton "Relationships" puis "Add parent"), sinon elle ne sera jamais prise en compte par l'automatisation.
   - type: textarea
     id: description
     attributes:

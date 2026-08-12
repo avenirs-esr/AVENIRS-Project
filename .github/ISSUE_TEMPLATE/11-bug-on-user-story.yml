@@ -13,7 +13,7 @@ body:
 
         Bug report for a User Story developped during sprint
 
-        ⚠️ Attach this task as a sub-issue of the User Story (using the "Add sub-issue" button at the bottom right of the issue); otherwise, it will never be picked up by the automation.
+        ⚠️ Attach this task as a sub-issue of the User Story (once created, use the "Relationships" button followed by "Add parent" on the right side of the issue); otherwise, it will never be picked up by the automation.
   - type: input
     id: summary
     attributes:

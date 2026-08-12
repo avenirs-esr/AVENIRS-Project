@@ -64,6 +64,8 @@ body:
       value: |
         ### Référentiels projet
 
+        Les critères de Definition of Ready (DoR) et Definition of Done (DoD) s'appliquent à cet Enabler Story selon sa nature
+
         - Definition of Ready (DoR) :
           https://avenirs-esr.github.io/dev-doc/quality/definition-of-ready-fr/
 
