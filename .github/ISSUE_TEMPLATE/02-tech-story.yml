@@ -16,6 +16,8 @@ body:
 
         Une Technical Story décrit un travail technique nécessaire pour permettre, sécuriser ou faciliter l'évolution du produit.
 
+        ⚠️ Attachez cette User Story comme sous-issue d'une EPIC (une fois crée à droite dans l'issue, bouton "Relationships" puis "Add parent"), sinon elle ne sera jamais prise en compte par l'automatisation.
+
   - type: textarea
     id: description
     attributes:
