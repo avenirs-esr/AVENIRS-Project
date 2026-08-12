@@ -11,6 +11,8 @@ body:
     attributes:
       value: |
         ## Story:
+
+        ⚠️ Attachez cette tâche comme sous-issue de la User Story (bouton "Add sub-issue" en bas à droite de l'issue), sinon elle ne sera jamais prise en compte par l'automatisation.
   - type: textarea
     id: description
     attributes:

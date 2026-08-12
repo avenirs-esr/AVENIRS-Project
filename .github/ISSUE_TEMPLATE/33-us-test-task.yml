@@ -13,16 +13,9 @@ body:
       value: |
         ## 🧪 TEST Task – Cofolio
 
-        Final E2E validation of a User Story in dev environment before deployment in qualification.
-  - type: input
-    id: story_number
-    attributes:
-      label: Story
-      description: Reference the story number this test is related to
-      value: "## Story: #"
-      placeholder: "## Story: #"
-    validations:
-      required: true
+        Validation finale de bout en bout (E2E) d'une User Story dans l'environnement de développement avant le déploiement en qualification.
+
+        ⚠️ Attachez cette tâche comme sous-issue de la User Story (bouton "Add sub-issue" en bas à droite de l'issue), sinon elle ne sera jamais prise en compte par l'automatisation.
   - type: textarea
     id: description
     attributes:
@@ -35,4 +28,5 @@ body:
   - type: markdown
     attributes:
       value: |
-        This task will validate the User Story in dev environment before qualification deployment. It will be automatically added to the 'Cofolio' project.
+        Cette tâche validera la User Story dans l'environnement de développement avant le déploiement en qualification. Elle sera automatiquement ajoutée au projet « Cofolio ».
+

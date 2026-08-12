@@ -12,15 +12,8 @@ body:
         ## 🐞 Bug on User Story – Cofolio
 
         Bug report for a User Story developped during sprint
-  - type: input
-    id: story_number
-    attributes:
-      label: Related User Story
-      description: Reference the User Story number this Bug is related to
-      value: "## Story: #"
-      placeholder: "## Story: #"
-    validations:
-      required: true
+
+        ⚠️ Attach this task as a sub-issue of the User Story (using the "Add sub-issue" button at the bottom right of the issue); otherwise, it will never be picked up by the automation.
   - type: input
     id: summary
     attributes:

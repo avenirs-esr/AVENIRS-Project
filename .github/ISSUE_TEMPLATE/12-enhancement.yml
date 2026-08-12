@@ -56,16 +56,6 @@ body:
         - Better user experience
         - Improved consistency across the application
         - Reduced cognitive load
-  - type: input
-    id: related_issue
-    attributes:
-      label: Related Epic
-      description: Reference the epic number this enhancement is related to
-      value: "Epic : #"
-      placeholder: | 
-        Epic : #issue_number
-    validations:
-      required: true
   - type: textarea
     id: screenshots
     attributes:
