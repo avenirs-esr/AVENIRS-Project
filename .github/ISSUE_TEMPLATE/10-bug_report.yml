@@ -1,6 +1,6 @@
 name: "🐞 Bug Report"
 description: Help us identify and fix bugs by filling out the details below.
-title: "[Bug] <short title>"
+title: "[BUG] <short title>"
 labels:
   - bug
   - needs-triage
