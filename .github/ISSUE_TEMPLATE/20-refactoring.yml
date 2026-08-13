@@ -71,3 +71,5 @@ body:
 
         - Definition of Done (DoD) :
           https://avenirs-esr.github.io/dev-doc/quality/definition-of-done-fr/
+
+          ⚠️ Le **cycle process** de la DoD (sous-tâches, CI, `[QUALIF]`, nightly, qualification PO) s'applique intégralement à cet Enabler Story. Les critères orientés utilisateur (valeur métier, maquettes) et les exigences transverses UI (accessibilité, UX, compat. navigateurs) ne s'appliquent que si ce changement impacte l'interface utilisateur ou une API exposée.
