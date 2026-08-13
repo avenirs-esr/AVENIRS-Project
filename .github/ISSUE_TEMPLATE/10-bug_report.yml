@@ -55,4 +55,13 @@ body:
   - type: markdown
     attributes:
       value: |
+        ### Référentiels projet
+
+        - **Ready** : ce bug est considéré comme prêt à être pris en charge dès lors que les champs ci-dessus (résumé, étapes de reproduction, comportement attendu) sont remplis et que la sévérité est claire — la Definition of Ready générique (orientée valeur métier/maquettes) ne s'applique pas à un Bug.
+
+        - **Done** : le cycle process de la Definition of Done s'applique (PR liée, CI verte, revue de code, nightly E2E, déploiement qualif, validation PO), **à l'exception de la sous-tâche `[QUALIF]`** qui n'est pas requise pour un Bug. Les exigences transverses (accessibilité, UX, sécurité, compat. navigateurs) s'appliquent si le correctif touche l'interface utilisateur ou une API exposée :
+          https://avenirs-esr.github.io/dev-doc/quality/definition-of-done-fr/
+  - type: markdown
+    attributes:
+      value: |
         Thank you for helping us improving Cofolio! This issue will be automatically added to the 'Cofolio inter-sprint' project.
