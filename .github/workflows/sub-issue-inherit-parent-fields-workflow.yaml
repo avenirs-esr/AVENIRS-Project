@@ -1,0 +1,19 @@
+name: "Sub-issue inherits parent project fields"
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: read
+  repository-projects: write
+
+jobs:
+  call_remote:
+    uses: avenirs-esr/avenirs-workflows/.github/workflows/sub-issue-inherit-parent-fields-workflow.yaml@main
+    with:
+      issue_node_id: ${{ github.event.issue.node_id }}
+    secrets:
+      GH_APP_ID: ${{ secrets.GH_APP_ID }}
+      GH_APP_TOKEN: ${{ secrets.GH_APP_TOKEN }}
